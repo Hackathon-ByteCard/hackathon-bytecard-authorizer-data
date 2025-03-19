@@ -15,11 +15,11 @@ public class CardCanceledAuthorizationModel {
     @Column(name = "card_canceled_authorization_id")
     private BigInteger id;
 
-    @Column(name = "card_id", nullable = false)
-    private BigInteger cardId;
+    @Column(name = "pan_ref", nullable = false)
+    private byte[] panRef;
 
-    @Column(name = "authorization_id", nullable = false)
-    private BigInteger authorizationId;
+    @Column(name = "authorization_code", nullable = false)
+    private byte[] authorizationCode;
 
     @Column(name = "transaction_time", nullable = false)
     private LocalDateTime transactionTime;

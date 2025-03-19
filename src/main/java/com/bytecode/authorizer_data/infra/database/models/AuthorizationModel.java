@@ -9,7 +9,7 @@ import java.math.BigInteger;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "authorization")
+@Table(name = "`authorization`")
 @Data
 public class AuthorizationModel {
     @Id
